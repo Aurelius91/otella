@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'HKGrotesk-Light';
+    src: url('hinted-HKGrotesk-Light.eot');
+    src: url('hinted-HKGrotesk-Light.eot?#iefix') format('embedded-opentype'),
+        url('hinted-HKGrotesk-Light.woff') format('woff'),
+        url('hinted-HKGrotesk-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

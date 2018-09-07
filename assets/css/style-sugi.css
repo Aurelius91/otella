@@ -1,0 +1,8 @@
+.find-my-needs-image, .find-my-needs-image-2 {
+    border: 5px solid transparent;
+    cursor: pointer;
+}
+
+.find-my-needs-image:hover, .find-my-needs-image.selected, .find-my-needs-image-2:hover, .find-my-needs-image-2.selected {
+    border: 5px solid #3d71c9;
+}
