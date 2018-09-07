@@ -237,20 +237,32 @@ function initFindMyNeedsSlider() {
 		nav: false,
 		loop: false,
 		gutter: 10,
-		responsive: {
-			768: {
-				gutter: 0
-			}
-		},
 		onInit: function (info) {
 			document.querySelector('.slider-number-current').textContent = info.index + 1;
-			document.querySelector('.slider-number-total').textContent = info.slideCount;
+
+			if(info.slideCount <= 5) {
+				document.querySelector('.slider-number-total').textContent = info.slideCount;
+			}
+			else {
+				document.querySelector('.slider-number-total').textContent = '5';
+			}
 		}
 	});
 
 	findMyNeedsSlider.events.on('indexChanged', function() {
-		document.querySelector('.slider-number-current').textContent = findMyNeedsSlider.getInfo().index + 1;
-		document.querySelector('.slider-number-total').textContent = findMyNeedsSlider.getInfo().slideCount;
+		if(findMyNeedsSlider.getInfo().index + 1 <= 5) {
+			document.querySelector('.slider-number-current').textContent = findMyNeedsSlider.getInfo().index + 1;
+		}
+		else {
+			document.querySelector('.slider-number-current').textContent = '5';
+		}
+
+		if(findMyNeedsSlider.getInfo().slideCount <= 5 ) {
+			document.querySelector('.slider-number-total').textContent = findMyNeedsSlider.getInfo().slideCount;
+		}
+		else {
+			document.querySelector('.slider-number-total').textContent = '5';
+		}
 	});
 }
 
@@ -370,10 +382,10 @@ $('#previous-works-modal .popup-button-wrapper button.btn-custom').on('click', f
 // 	console.log(this);
 // });
 
-$('#about-us-modal .popup-button-wrapper button.btn-custom').on('click', function(e) {
-	var target = $(this).data('target');
-	$('#about-us-modal-mobile-navigation a[href='+ target +']').tab('show');
-});
+// $('#about-us-modal .popup-button-wrapper button.btn-custom').on('click', function(e) {
+// 	var target = $(this).data('target');
+// 	$('#about-us-modal-mobile-navigation a[href='+ target +']').tab('show');
+// });
 
 /****************************************/
 /* OPEN OTHER TABS FROM BUTTON CLICK END*/
@@ -392,13 +404,45 @@ function homeClick() {
 		$(this).parent().removeClass('active');
 	});
 
-	$('.find-my-needs-image').click(function() {
-		$('.find-my-needs-image').removeClass('selected');
+	$('.find-my-needs-image-1').click(function() {
+		$('.find-my-needs-image-1').removeClass('selected');
 		$(this).addClass('selected');
 	});
 
 	$('.find-my-needs-image-2').click(function() {
 		$('.find-my-needs-image-2').removeClass('selected');
+		$(this).addClass('selected');
+	});
+
+	$('.find-my-needs-image-3').click(function() {
+		$('.find-my-needs-image-3').removeClass('selected');
+		$(this).addClass('selected');
+	});
+
+	$('.find-my-needs-image-4').click(function() {
+		$('.find-my-needs-image-4').removeClass('selected');
+		$(this).addClass('selected');
+	});
+
+	$('.find-my-needs-image-5-1').click(function() {
+		$('.find-my-needs-image-5-1').removeClass('selected');
+		console.log('ke 1');
+		$(this).addClass('selected');
+	});
+
+	$('.find-my-needs-image-5-2').click(function() {
+		$('.find-my-needs-image-5-2').removeClass('selected');
+		console.log('ke 2');
+		$(this).addClass('selected');
+	});
+
+	$('.find-my-needs-image-5-3').click(function() {
+		$('.find-my-needs-image-5-3').removeClass('selected');
+		$(this).addClass('selected');
+	});
+
+	$('.find-my-needs-image-5-4').click(function() {
+		$('.find-my-needs-image-5-4').removeClass('selected');
 		$(this).addClass('selected');
 	});
 }
@@ -592,6 +636,13 @@ $('#news-and-gallery-modal').on('hidden.bs.modal', function () {
 	newsAndGallerySlider.destroy();
 });
 
+$('.news-and-gallery-modal-carousel .thumbnail').on('click', function() {
+	$('.news-and-gallery-modal-carousel .thumbnail').removeClass('active');
+	$(this).addClass('active');
+	var image = $(this).data('image');
+	$('.news-and-gallery-modal-main-thumbnail .content-inside').css('background-image', 'url('+ image +')');
+});
+
 /****************************************/
 /*   NEWS AND GALLERY MODAL SLIDER END  */
 /****************************************/
@@ -607,13 +658,13 @@ for(var i = 0; i < aboutUsTabsButtons.length; i++) {
 	aboutUsTabsButtons[i].addEventListener('click', function() {
 		var aboutUsTabsTarget = this.getAttribute('data-target');
 		$('#about-us-modal').modal('toggle');
-		$('#about-us-modal #about-us-modal-mobile-navigation a[href='+ aboutUsTabsTarget +']').tab('show');
+		$('#about-us-modal #about-us-modal-mobile-navigation a[data-target="'+ aboutUsTabsTarget +'"]').tab('show');
 	});
 }
 
 $('#about-us-modal .popup-button-wrapper button.btn-custom').on('click', function(e) {
 	var target = $(this).data('target');
-	$('#about-us-modal-mobile-navigation a[href='+ target +']').tab('show');
+	$('#about-us-modal-mobile-navigation a[data-target="'+ target +'"]').tab('show');
 });
 
 
@@ -624,10 +675,36 @@ for(var i = 0; i < servicesTabsButtons.length; i++) {
 		var servicesTabsTarget = this.getAttribute('data-target');
 		$('#services-modal').modal('toggle');
 		console.log(servicesTabsTarget);
-		$('#services-modal #services-modal-mobile-navigation a[href='+ servicesTabsTarget +']').tab('show');
+		$('#services-modal #services-modal-mobile-navigation a[data-target="'+ servicesTabsTarget +'"]').tab('show');
 	});
 }
 
 /****************************************/
 /* OPEN CERTAIN TABS ON MODAL OPEN END  */
+/****************************************/
+
+/****************************************/
+/*           SEARCH FUNCTION            */
+/****************************************/
+var openSearchButtonDesktop = document.querySelector('#btn-open-search-desktop');
+var openSearchButtonMobile  = document.querySelector('#btn-open-search-mobile');
+var searchOverlay			= document.querySelector('.search-overlay');
+var closeSearch				= searchOverlay.querySelector('button.btn-close');
+
+openSearchButtonDesktop.addEventListener('click', function() {
+	searchOverlay.classList.add('active');
+	document.querySelector('#input-desktop-search').focus();
+});
+
+openSearchButtonMobile.addEventListener('click', function() {
+	searchOverlay.classList.add('active');
+	document.querySelector('#input-desktop-search').focus();
+});
+
+closeSearch.addEventListener('click', function() {
+	searchOverlay.classList.remove('active');
+});
+
+/****************************************/
+/*         SEARCH FUNCTION END          */
 /****************************************/

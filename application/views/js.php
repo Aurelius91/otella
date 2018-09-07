@@ -11,3 +11,29 @@
 <script src="<?= base_url(); ?>assets/plugin/gsap/Draggable.min.js"></script>
 <script src="<?= base_url(); ?>assets/js/main.js?v=1.1"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" async defer></script>
+
+<script type="text/javascript">
+	$(function() {
+
+	});
+
+	function changeLanguage(lang) {
+		$.ajax({
+            data: {
+                "<?= $csrf['name'] ?>": "<?= $csrf['hash'] ?>"
+            },
+            dataType: 'JSON',
+            success: function(data) {
+               window.location.reload();
+            },
+            type : 'POST',
+            url : '<?= base_url(); ?>main/ajax_set_language/'+ lang +'/'
+       });
+	}
+
+	function isEmail(email) {
+        var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+        return regex.test(email);
+    }
+</script>

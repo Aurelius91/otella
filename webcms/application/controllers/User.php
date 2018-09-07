@@ -217,7 +217,6 @@ class User extends CI_Controller
 				}
 			}
 
-
 			$this->_validate_add($user_record);
 
 			$user_id = $this->core_model->insert('user', $user_record);

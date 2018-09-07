@@ -1,6 +1,6 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Services extends CI_Controller
+class Maintenance extends CI_Controller
 {
     private $_lang;
     private $_setting;
@@ -16,9 +16,9 @@ class Services extends CI_Controller
         $this->_lang = ($this->_setting->setting__website_enabled_dual_language <= 0) ? $this->_setting->setting__system_language : $this->_lang;
 
         // check maintenance
-        if ($this->_setting->setting__system_main_website_maintenance > 0)
+        if ($this->_setting->setting__system_main_website_maintenance <= 0)
         {
-            redirect(base_url() . 'maintenance/');
+            redirect(base_url());
         }
     }
 
@@ -30,13 +30,13 @@ class Services extends CI_Controller
     {
         $header_id = 1;
 
-        $arr_data['title'] = 'Services';
+        $arr_data['title'] = 'Under Maintenance';
         $arr_data['setting'] = $this->_setting;
         $arr_data['lang'] = $this->_lang;
         $arr_data['arr_header'] = $this->cms_function->generate_header($this->_lang, $this->_setting);
         $arr_data['csrf'] = $this->cms_function->generate_csrf();
 
-        $this->load->view('services', $arr_data);
+        $this->load->view('maintenance', $arr_data);
     }
     /* End Public Function Area */
 

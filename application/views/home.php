@@ -15,9 +15,13 @@
         <button class="btn btn-search" id="btn-open-search-mobile"><img src="<?= base_url(); ?>assets/images/main/search-icon.png" alt="Search" class="search-icon"></button>
     	<div class="navigation-left">
     		<ul class="menu-tes">
-    			<li data-menuanchor="PreviousWorks"><a href="#PreviousWorks"><span>PORTFOLIO</span></a></li>
-    			<li data-menuanchor="AboutUs"><a href="#AboutUs"><span>ABOUT US</span></a></li>
-                <li data-menuanchor="NewsAndGallery"><a href="#NewsAndGallery"><span>news & GALLERY</span></a></li>
+    			<? foreach ($arr_header as $key => $header): ?>
+    				<? if ($key == 0 || $key > 3): ?>
+    					<? continue; ?>
+    				<? endif; ?>
+
+	    			<li data-menuanchor="<?= $header->anchor; ?>"><a href="<?= $header->link; ?>"><span><?= $header->name; ?></span></a></li>
+	    		<? endforeach; ?>
     		</ul>
     	</div><!--
 	 --><div class="navigation-logo">
@@ -25,31 +29,39 @@
 		</div><!--
 	 --><div class="navigation-right">
 			<ul class="menu-tes">
-				<li data-menuanchor="ContactUs"><a href="#ContactUs"><span>CONTACT US</span></a></li>
-				<li data-menuanchor="Career"><a href="#Career"><span>CAREER</span></a></li>
-                <li data-menuanchor="Services"><a href="#Services"><span>SERVICES</span></a></li>
-				<li class="search-button-container"><button class="btn btn-search" id="btn-open-search-desktop"><img src="<?= base_url(); ?>assets/images/main/search-icon.png" alt="Search" class="search-icon"></button></li>
+				<? foreach ($arr_header as $key => $header): ?>
+    				<? if ($key <= 3): ?>
+    					<? continue; ?>
+    				<? endif; ?>
+
+	    			<li data-menuanchor="<?= $header->anchor; ?>"><a href="<?= $header->link; ?>"><span><?= $header->name; ?></span></a></li>
+	    		<? endforeach; ?>
+				<li <? if ($setting->setting__system_main_search_function <= 0): ?>style="display: none;"<? endif; ?> class="search-button-container"><button class="btn btn-search" id="btn-open-search-desktop"><img src="<?= base_url(); ?>assets/images/main/search-icon.png" alt="Search" class="search-icon"></button></li>
 			</ul>
 		</div>
     </div>
 	<div id="navigation-mobile-menu">
 		<ul class="nav navigation-mobile-menu-list">
-			<li><a href="#header">Home</a></li>
-			<li><a href="#previous-works">Portfolio</a></li>
-			<li><a href="#about-us">About Us</a></li>
-			<li><a href="#news-and-gallery">News &amp; Gallery</a></li>
-			<li><a href="#contact-us">Contact Us</a></li>
-			<li><a href="#career">Career</a></li>
-			<li><a href="#services">Services</a></li>
+			<? foreach ($arr_header as $header): ?>
+				<li><a href="<?= $header->link; ?>"><?= $header->name; ?></a></li>
+			<? endforeach; ?>
 		</ul>
 		<ul class="choose-language mobile">
-			<li>EN</li>
-			<li>ID</li>
+			<li <? if ($lang == $setting->setting__system_language): ?>class="active"<? endif; ?> onclick="changeLanguage('<?= $setting->setting__system_language; ?>');"><?= $setting->setting__system_language; ?></li>
+			<li <? if ($lang == $setting->setting__system_language2): ?>class="active"<? endif; ?> onclick="changeLanguage('<?= $setting->setting__system_language2; ?>');"><?= $setting->setting__system_language2; ?></li>
 		</ul>
 		<ul class="social-media-icon-wrapper mobile">
-			<li><a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-			<li><a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-			<li><a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+			<? if ($setting->setting__social_media_facebook_link != ''): ?>
+				<li><a href="<?= $setting->setting__social_media_facebook_link; ?>" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+			<? endif; ?>
+
+			<? if ($setting->setting__social_media_twitter_link != ''): ?>
+				<li><a href="<?= $setting->setting__social_media_twitter_link; ?>" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+			<? endif; ?>
+
+			<? if ($setting->setting__social_media_instagram_link != ''): ?>
+				<li><a href="<?= $setting->setting__social_media_instagram_link; ?>" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+			<? endif; ?>
 		</ul>
 	</div>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -57,8 +69,8 @@
 		<div class="navigation-bottom-inner">
 			<div class="choose-language desktop">
 				<ul>
-					<li>EN</li>
-					<li>ID</li>
+					<li <? if ($lang == $setting->setting__system_language): ?>class="active"<? endif; ?> onclick="changeLanguage('<?= $setting->setting__system_language; ?>');"><?= $setting->setting__system_language; ?></li>
+					<li <? if ($lang == $setting->setting__system_language2): ?>class="active"<? endif; ?> onclick="changeLanguage('<?= $setting->setting__system_language2; ?>');"><?= $setting->setting__system_language2; ?></li>
 				</ul>
 			</div>
 			<div class="scroll-down-icon-wrapper">
@@ -67,9 +79,17 @@
 			</div>
 			<div class="social-media-icon-wrapper desktop">
 				<ul>
-					<li><a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-					<li><a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-					<li><a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					<? if ($setting->setting__social_media_facebook_link != ''): ?>
+						<li><a href="<?= $setting->setting__social_media_facebook_link; ?>" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<? endif; ?>
+
+					<? if ($setting->setting__social_media_twitter_link != ''): ?>
+						<li><a href="<?= $setting->setting__social_media_twitter_link; ?>" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					<? endif; ?>
+
+					<? if ($setting->setting__social_media_instagram_link != ''): ?>
+						<li><a href="<?= $setting->setting__social_media_instagram_link; ?>" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					<? endif; ?>
 				</ul>
 			</div>
 		</div>

@@ -366,6 +366,33 @@ button:focus, button:active {
   margin-left: 5px;
 }
 
+#navigation button.btn-search#btn-open-search-mobile {
+  position: absolute;
+  top: 11px;
+  right: 10px;
+  background-color: #3d71c9;
+  border-radius: 0;
+  box-shadow: none;
+  outline: none;
+  padding: 4px 6px;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  #navigation button.btn-search#btn-open-search-mobile {
+    display: block;
+  }
+}
+
+#navigation button.btn-search#btn-open-search-mobile img.search-icon {
+  position: relative;
+  display: block;
+  width: 12px;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
 #navigation .navigation-left,
 #navigation .navigation-right {
   position: relative;
@@ -1569,6 +1596,12 @@ button.btn-custom.min-width {
   min-width: 130px;
 }
 
+@media screen and (max-width: 767px) {
+  button.btn-custom.min-width {
+    min-width: initial;
+  }
+}
+
 button.btn-custom.smaller-padding {
   padding-top: 6px;
   padding-bottom: 6px;
@@ -2582,37 +2615,72 @@ button.close-modal .close-icon span.stripe:last-child {
   }
 }
 
-.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image,
-.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-2 {
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-1,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-2,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-3,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-4,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-5-1,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-5-2,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-5-3,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-5-4 {
   border: 5px solid transparent;
   cursor: pointer;
   -webkit-transition: border-color 0.3s ease;
   transition: border-color 0.3s ease;
 }
 
-.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image:hover, .modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image.selected,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-1:hover, .modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-1.selected,
 .modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-2:hover,
-.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-2.selected {
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-2.selected,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-3:hover,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-3.selected,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-4:hover,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-4.selected,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-5-1:hover,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-5-1.selected,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-5-2:hover,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-5-2.selected,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-5-3:hover,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-5-3.selected,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-5-4:hover,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-5-4.selected {
   border: 5px solid #3d71c9;
 }
 
-.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image:hover .black-overlay, .modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image.selected .black-overlay,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-1:hover .black-overlay, .modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-1.selected .black-overlay,
 .modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-2:hover .black-overlay,
-.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-2.selected .black-overlay {
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-2.selected .black-overlay,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-3:hover .black-overlay,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-3.selected .black-overlay,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-4:hover .black-overlay,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-4.selected .black-overlay,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-5-1:hover .black-overlay,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-5-1.selected .black-overlay,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-5-2:hover .black-overlay,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-5-2.selected .black-overlay,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-5-3:hover .black-overlay,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-5-3.selected .black-overlay,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-5-4:hover .black-overlay,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-5-4.selected .black-overlay {
   opacity: 0;
 }
 
-.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image:hover img.answer-hover, .modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image.selected img.answer-hover,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-1:hover img.answer-hover, .modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-1.selected img.answer-hover,
 .modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-2:hover img.answer-hover,
-.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-2.selected img.answer-hover {
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-2.selected img.answer-hover,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-3:hover img.answer-hover,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-3.selected img.answer-hover,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-4:hover img.answer-hover,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-4.selected img.answer-hover,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-5-1:hover img.answer-hover,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-5-1.selected img.answer-hover,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-5-2:hover img.answer-hover,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-5-2.selected img.answer-hover,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-5-3:hover img.answer-hover,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-5-3.selected img.answer-hover,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-5-4:hover img.answer-hover,
+.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-5-4.selected img.answer-hover {
   opacity: 1;
-}
-
-.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image:hover p.answer-no, .modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image.selected p.answer-no,
-.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-2:hover p.answer-no,
-.modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body .find-my-needs-image-2.selected p.answer-no {
-  bottom: 53.5%;
-  right: 45%;
 }
 
 .modal-custom#find-my-needs-modal .modal-dialog .modal-content .modal-body h1.slider-number {
@@ -2750,6 +2818,25 @@ button.close-modal .close-icon span.stripe:last-child {
   content: '';
   display: block;
   padding-top: 62%;
+}
+
+.modal-custom#news-and-gallery-modal .popup-content .news-and-gallery-modal-carousel-wrapper .thumbnail:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #3d71c9;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.modal-custom#news-and-gallery-modal .popup-content .news-and-gallery-modal-carousel-wrapper .thumbnail.active:after {
+  opacity: 0.7;
 }
 
 @media screen and (max-width: 767px) {
@@ -3612,6 +3699,7 @@ button.close-modal .close-icon span.stripe:last-child {
 
 @media screen and (max-width: 767px) {
   .modal-custom.full .popup-content .popup-button-wrapper .popup-button-wrapper-inner:nth-child(2) {
+    display: block;
     margin-left: 0;
     margin-top: 10px;
   }
@@ -4675,30 +4763,17 @@ button.close-modal .close-icon span.stripe:last-child {
   display: block;
 }
 
+@media screen and (max-width: 767px) {
+  .find-my-needs-slider button.btn-custom span.unskew svg {
+    display: none;
+  }
+}
+
 .find-my-needs-slider .find-my-needs-slider-layout-1 {
   width: 100%;
   max-width: 1080px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.find-my-needs-slider .find-my-needs-slider-layout-1 .find-my-needs-thumbnail-1 {
-  position: relative;
-  width: 100%;
-  min-height: 100px;
-  margin-bottom: 30px;
-}
-
-.find-my-needs-slider .find-my-needs-slider-layout-1 .find-my-needs-thumbnail-1:before {
-  content: '';
-  display: block;
-  padding-top: 52%;
-}
-
-@media screen and (max-width: 767px) {
-  .find-my-needs-slider .find-my-needs-slider-layout-1 .find-my-needs-thumbnail-1 {
-    margin-bottom: 15px;
-  }
 }
 
 .find-my-needs-slider .find-my-needs-slider-layout-2 {
@@ -4707,21 +4782,66 @@ button.close-modal .close-icon span.stripe:last-child {
   margin-right: auto;
 }
 
-.find-my-needs-slider .find-my-needs-slider-layout-2 .find-my-needs-thumbnail-2 {
+.find-my-needs-slider .find-my-needs-slider-layout-3 {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.find-my-needs-slider .find-my-needs-thumbnail-1 {
   position: relative;
   width: 100%;
   min-height: 100px;
   margin-bottom: 30px;
 }
 
-.find-my-needs-slider .find-my-needs-slider-layout-2 .find-my-needs-thumbnail-2:before {
+.find-my-needs-slider .find-my-needs-thumbnail-1:before {
+  content: '';
+  display: block;
+  padding-top: 52%;
+}
+
+@media screen and (max-width: 767px) {
+  .find-my-needs-slider .find-my-needs-thumbnail-1 {
+    margin-bottom: 15px;
+  }
+}
+
+.find-my-needs-slider .find-my-needs-thumbnail-2 {
+  position: relative;
+  width: 100%;
+  min-height: 100px;
+  margin-bottom: 30px;
+}
+
+.find-my-needs-slider .find-my-needs-thumbnail-2:before {
   content: '';
   display: block;
   padding-top: 74%;
 }
 
 @media screen and (max-width: 767px) {
-  .find-my-needs-slider .find-my-needs-slider-layout-2 .find-my-needs-thumbnail-2 {
+  .find-my-needs-slider .find-my-needs-thumbnail-2 {
+    margin-bottom: 15px;
+  }
+}
+
+.find-my-needs-slider .find-my-needs-thumbnail-square {
+  position: relative;
+  width: 100%;
+  min-height: 80px;
+  margin-bottom: 30px;
+}
+
+.find-my-needs-slider .find-my-needs-thumbnail-square:before {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .find-my-needs-slider .find-my-needs-thumbnail-square {
     margin-bottom: 15px;
   }
 }
@@ -4740,15 +4860,234 @@ button.close-modal .close-icon span.stripe:last-child {
 
 .find-my-needs-slider p.answer-no {
   position: absolute;
-  bottom: 10px;
-  right: 10px;
+  top: 50%;
+  left: 50%;
   line-height: 1;
   font-size: 19px !important;
   color: #fff;
   font-family: 'HKGrotesk-SemiBold';
   margin-bottom: 0 !important;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
+@media screen and (max-width: 1480px) {
+  .find-my-needs-slider p.answer-no {
+    font-size: 16px !important;
+  }
+}
+
+@media screen and (max-width: 1380px) {
+  .find-my-needs-slider p.answer-no {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .find-my-needs-slider p.answer-no {
+    font-size: 13px !important;
+  }
+}
+
+.search-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.96);
+  opacity: 0;
+  z-index: 0;
+  pointer-events: none;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+.search-overlay.active {
+  z-index: 1100;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.search-overlay .input-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  overflow: auto;
+  cursor: default;
+  border-bottom: #f3f3f3 solid 2px;
+  margin-bottom: 8px;
+  clear: both;
+  display: table;
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .search-overlay .input-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.search-overlay .input-wrapper > input {
+  border: none;
+  background-color: transparent;
+  display: table-cell;
+  vertical-align: middle;
+  box-shadow: none;
+  border-radius: 0;
+  border-bottom: 1px solid #242424;
+  height: 46px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+}
+
+@media screen and (max-width: 767px) {
+  .search-overlay .input-wrapper > input {
+    display: block;
+    margin-bottom: 22px;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+  }
+}
+
+.search-overlay .input-wrapper .search-button-wrapper {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  width: 165px;
+  padding-left: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .search-overlay .input-wrapper .search-button-wrapper {
+    display: block;
+    width: auto;
+    padding-left: 0;
+    padding-right: 10px;
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .search-overlay .input-wrapper button.btn {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    width: 100%;
+    text-transform: none;
+  }
+}
+
+.search-overlay button.btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  box-shadow: none;
+  padding: 0;
+  height: 30px;
+  width: 30px;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.search-overlay button.btn-close:focus, .search-overlay button.btn-close:hover, .search-overlay button.btn-close:active, .search-overlay button.btn-close.active {
+  background-color: transparent;
+  box-shadow: none;
+  outline: transparent;
+}
+
+@media screen and (max-width: 767px) {
+  .search-overlay button.btn-close {
+    top: 5px;
+    right: 5px;
+  }
+}
+
+.search-overlay button.btn-close .close-icon {
+  position: relative;
+  width: 2px;
+  height: 30px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #000;
+}
+
+@media screen and (max-width: 767px) {
+  .search-overlay button.btn-close .close-icon {
+    height: 24px;
+  }
+}
+
+.search-overlay button.btn-close .close-icon:after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 30px;
+  top: 14px;
+  right: -14px;
+  background-color: #000;
+}
+
+@media screen and (max-width: 767px) {
+  .search-overlay button.btn-close .close-icon:after {
+    width: 24px;
+    top: 11px;
+    right: -11px;
+  }
+}
+
+.search-result-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-result-container .search-point {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 35px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  background-color: #fff;
+}
+
+.search-result-container .search-point:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+@media screen and (max-width: 1380px) {
+  .search-result-container .search-point {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .search-result-container .search-point {
+    margin-bottom: 25px;
+  }
 }
 
 /* Section 2

@@ -67,11 +67,11 @@ class Cms_function
 		return $arr_csrf;
 	}
 
-    public function generate_header()
+    public function generate_header($lang, $setting)
     {
         $CI = &get_instance();
 
-        $CI->db->select('id, header_id, name, name_lang, link');
+        $CI->db->select('id, header_id, name, name_lang, link, anchor');
         $CI->db->where('header_id <=', 0);
         $CI->db->order_by('sort');
         $arr_header = $CI->core_model->get('header');
@@ -94,6 +94,11 @@ class Cms_function
         foreach ($arr_header as $header)
         {
             $header->arr_child_header = (isset($arr_header_lookup[$header->id])) ? $arr_header_lookup[$header->id] : array();
+
+            if ($lang != $setting->setting__system_language && $header->name_lang != '')
+            {
+                $header->name = $header->name_lang;
+            }
         }
 
         return $arr_header;
@@ -109,11 +114,15 @@ class Cms_function
 		return (count($arr_metatag) > 0) ? $arr_metatag[0] : '';
 	}
 
-    public function generate_section($header_id)
+    public function generate_section($header_id = 0)
     {
         $CI = &get_instance();
 
-        $CI->db->where('header_id', $header_id);
+        if ($header_id > 0)
+        {
+            $CI->db->where('header_id', $header_id);
+        }
+
         $CI->db->order_by('id');
         $arr_section = $CI->core_model->get('section');
         $arr_section_id = $CI->cms_function->extract_records($arr_section, 'id');
