@@ -12,9 +12,9 @@
 			<span></span>
 			<span></span>
 		</button>
+        <button class="btn btn-search" id="btn-open-search-mobile"><img src="<?= base_url(); ?>assets/images/main/search-icon.png" alt="Search" class="search-icon"></button>
     	<div class="navigation-left">
     		<ul class="menu-tes">
-
     			<li data-menuanchor="PreviousWorks"><a href="#PreviousWorks"><span>PORTFOLIO</span></a></li>
     			<li data-menuanchor="AboutUs"><a href="#AboutUs"><span>ABOUT US</span></a></li>
                 <li data-menuanchor="NewsAndGallery"><a href="#NewsAndGallery"><span>news & GALLERY</span></a></li>
@@ -28,7 +28,7 @@
 				<li data-menuanchor="ContactUs"><a href="#ContactUs"><span>CONTACT US</span></a></li>
 				<li data-menuanchor="Career"><a href="#Career"><span>CAREER</span></a></li>
                 <li data-menuanchor="Services"><a href="#Services"><span>SERVICES</span></a></li>
-				<li class="search-button-container"><button class="btn btn-search"><img src="<?= base_url(); ?>assets/images/main/search-icon.png" alt="Search" class="search-icon"></button></li>
+				<li class="search-button-container"><button class="btn btn-search" id="btn-open-search-desktop"><img src="<?= base_url(); ?>assets/images/main/search-icon.png" alt="Search" class="search-icon"></button></li>
 			</ul>
 		</div>
     </div>
@@ -338,7 +338,7 @@
                         <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
                         <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor.</p>
 
-						<button id="open-about-us-tabs" class="btn btn-custom" style="margin-top:25px" data-target="#modal-about-us-section">
+						<button id="open-about-us-tabs" class="btn btn-custom" style="margin-top:25px" data-target=".modal-about-us-section">
 							<span class="unskew">
 								<span class="text">See More</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.49 31.49" enable-background="new 0 0 31.49 31.49"><path d="M21.205 5.007c-.429-.444-1.143-.444-1.587 0-.429.429-.429 1.143 0 1.571l8.047 8.047h-26.554c-.619.001-1.111.493-1.111 1.112 0 .619.492 1.127 1.111 1.127h26.554l-8.047 8.032c-.429.444-.429 1.159 0 1.587.444.444 1.159.444 1.587 0l9.952-9.952c.444-.429.444-1.143 0-1.571l-9.952-9.953z" fill="#fff"/></svg>
 							</span>
@@ -351,7 +351,7 @@
                         <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
                         <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor.</p>
 
-						<button id="open-history-tabs" class="btn btn-custom" style="margin-top:25px" data-target="#modal-history-section">
+						<button id="open-history-tabs" class="btn btn-custom" style="margin-top:25px" data-target=".modal-history-section">
 							<span class="unskew">
 								<span class="text">See More</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.49 31.49" enable-background="new 0 0 31.49 31.49"><path d="M21.205 5.007c-.429-.444-1.143-.444-1.587 0-.429.429-.429 1.143 0 1.571l8.047 8.047h-26.554c-.619.001-1.111.493-1.111 1.112 0 .619.492 1.127 1.111 1.127h26.554l-8.047 8.032c-.429.444-.429 1.159 0 1.587.444.444 1.159.444 1.587 0l9.952-9.952c.444-.429.444-1.143 0-1.571l-9.952-9.953z" fill="#fff"/></svg>
 							</span>
@@ -364,7 +364,7 @@
                         <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
                         <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor.</p>
 
-						<button id="open-team-tabs" class="btn btn-custom" style="margin-top:25px" data-target="#modal-our-team-section">
+						<button id="open-team-tabs" class="btn btn-custom" style="margin-top:25px" data-target=".modal-our-team-section">
 							<span class="unskew">
 								<span class="text">See More</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.49 31.49" enable-background="new 0 0 31.49 31.49"><path d="M21.205 5.007c-.429-.444-1.143-.444-1.587 0-.429.429-.429 1.143 0 1.571l8.047 8.047h-26.554c-.619.001-1.111.493-1.111 1.112 0 .619.492 1.127 1.111 1.127h26.554l-8.047 8.032c-.429.444-.429 1.159 0 1.587.444.444 1.159.444 1.587 0l9.952-9.952c.444-.429.444-1.143 0-1.571l-9.952-9.953z" fill="#fff"/></svg>
 							</span>
@@ -801,7 +801,7 @@
                         <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
                         <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor.</p>
 
-						<button class="btn btn-custom" style="margin-top:25px" data-target="#modal-construction-section">
+						<button class="btn btn-custom" style="margin-top:25px" data-target=".modal-construction-section">
 							<span class="unskew">
 								<span class="text">See More</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.49 31.49" enable-background="new 0 0 31.49 31.49"><path d="M21.205 5.007c-.429-.444-1.143-.444-1.587 0-.429.429-.429 1.143 0 1.571l8.047 8.047h-26.554c-.619.001-1.111.493-1.111 1.112 0 .619.492 1.127 1.111 1.127h26.554l-8.047 8.032c-.429.444-.429 1.159 0 1.587.444.444 1.159.444 1.587 0l9.952-9.952c.444-.429.444-1.143 0-1.571l-9.952-9.953z" fill="#fff"/></svg>
 							</span>
@@ -814,7 +814,7 @@
                         <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
                         <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor.</p>
 
-						<button class="btn btn-custom" style="margin-top:25px" data-target="#modal-interior-section">
+						<button class="btn btn-custom" style="margin-top:25px" data-target=".modal-interior-section">
 							<span class="unskew">
 								<span class="text">See More</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.49 31.49" enable-background="new 0 0 31.49 31.49"><path d="M21.205 5.007c-.429-.444-1.143-.444-1.587 0-.429.429-.429 1.143 0 1.571l8.047 8.047h-26.554c-.619.001-1.111.493-1.111 1.112 0 .619.492 1.127 1.111 1.127h26.554l-8.047 8.032c-.429.444-.429 1.159 0 1.587.444.444 1.159.444 1.587 0l9.952-9.952c.444-.429.444-1.143 0-1.571l-9.952-9.953z" fill="#fff"/></svg>
 							</span>
@@ -833,6 +833,23 @@
 			</div>
     	</div>
     </div>
+
+	<div class="search-overlay">
+		<button class="btn-close">
+			<div class="close-icon"></div>
+		</button>
+		<div class="input-wrapper">
+			<input type="text" id="input-desktop-search" class="form-control" placeholder="Search for...">
+			<div class="search-button-wrapper">
+				<button class="btn btn-custom" id="btn-search-desktop">
+					<span class="unskew">
+						See Detail
+					</span>
+				</button>
+			</div>
+	    </div>
+	</div>
+
 
 	<div id="initial-modal" class="modal modal-custom fade" role="dialog" data-backdrop="static" data-keyboard="false">
 	  	<div class="modal-dialog">
@@ -881,7 +898,162 @@
 					<img src="<?= base_url(); ?>assets/images/main/modal-supergraphic.png" alt="" class="modal-supergraphic">
 					<div class="find-my-needs-slider">
 						<div>
-							<div class="find-my-needs-slider-layout-1" id="find-my-needs-question-1">
+							<div class="find-my-needs-slider-layout-2" id="find-my-needs-question-1">
+								<div class="row">
+									<div class="col-xs-12 text-center">
+										<p>I'm working on</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-20 small-padding-right-mobile">
+										<div class="find-my-needs-thumbnail-square find-my-needs-image-1 selected">
+											<div class="content-inside" style="background-image:url(<?= base_url(); ?>assets/images/main/question-modal/question-1-1.jpg)">
+												<div class="black-overlay"></div>
+												<img src="<?= base_url(); ?>assets/images/main/answer-hover-square.png" alt="Select Answer" class="answer-hover">
+												<p class="answer-no">Office</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-6 col-sm-20 small-padding-left-mobile">
+										<div class="find-my-needs-thumbnail-square find-my-needs-image-1">
+											<div class="content-inside" style="background-image:url(<?= base_url(); ?>assets/images/main/question-modal/question-1-2.jpg)">
+												<div class="black-overlay"></div>
+												<img src="<?= base_url(); ?>assets/images/main/answer-hover-square.png" alt="Select Answer" class="answer-hover">
+												<p class="answer-no">Residence</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-6 col-sm-20 small-padding-right-mobile">
+										<div class="find-my-needs-thumbnail-square find-my-needs-image-1">
+											<div class="content-inside" style="background-image:url(<?= base_url(); ?>assets/images/main/question-modal/question-1-3.jpg)">
+												<div class="black-overlay"></div>
+												<img src="<?= base_url(); ?>assets/images/main/answer-hover-square.png" alt="Select Answer" class="answer-hover">
+												<p class="answer-no">Retail</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-6 col-sm-20 small-padding-left-mobile">
+										<div class="find-my-needs-thumbnail-square find-my-needs-image-1">
+											<div class="content-inside" style="background-image:url(<?= base_url(); ?>assets/images/main/question-modal/question-1-4.jpg)">
+												<div class="black-overlay"></div>
+												<img src="<?= base_url(); ?>assets/images/main/answer-hover-square.png" alt="Select Answer" class="answer-hover">
+												<p class="answer-no">Hospitality</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-6 col-sm-20 small-padding-right-mobile">
+										<div class="find-my-needs-thumbnail-square find-my-needs-image-1">
+											<div class="content-inside" style="background-image:url(<?= base_url(); ?>assets/images/main/question-modal/question-1-5.jpg)">
+												<div class="black-overlay"></div>
+												<img src="<?= base_url(); ?>assets/images/main/answer-hover-square.png" alt="Select Answer" class="answer-hover">
+												<p class="answer-no">Other</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 text-right">
+										<button class="btn btn-custom min-width find-my-needs-prev">
+											<span class="unskew">
+												<span class="text">Previous</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.49 31.49" enable-background="new 0 0 31.49 31.49"><path d="M10.273 5.009c.444-.444 1.143-.444 1.587 0 .429.429.429 1.143 0 1.571l-8.047 8.047h26.554c.619 0 1.127.492 1.127 1.111s-.508 1.127-1.127 1.127h-26.554l8.047 8.032c.429.444.429 1.159 0 1.587-.444.444-1.143.444-1.587 0l-9.952-9.952c-.429-.429-.429-1.143 0-1.571l9.952-9.952z" fill="#fff"/>
+											</span>
+										</button>
+									</div>
+									<div class="col-xs-6">
+										<button class="btn btn-custom min-width find-my-needs-next">
+											<span class="unskew">
+												<span class="text">Next</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.49 31.49" enable-background="new 0 0 31.49 31.49"><path d="M21.205 5.007c-.429-.444-1.143-.444-1.587 0-.429.429-.429 1.143 0 1.571l8.047 8.047h-26.554c-.619.001-1.111.493-1.111 1.112 0 .619.492 1.127 1.111 1.127h26.554l-8.047 8.032c-.429.444-.429 1.159 0 1.587.444.444 1.159.444 1.587 0l9.952-9.952c.444-.429.444-1.143 0-1.571l-9.952-9.953z" fill="#fff"/></svg>
+											</span>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="find-my-needs-slider-layout-1" id="find-my-needs-question-2">
+								<div class="row">
+									<div class="col-xs-12 text-center">
+										<p>I need help with</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3 small-padding-right-mobile">
+										<div class="find-my-needs-thumbnail-square find-my-needs-image-2 selected">
+											<div class="content-inside" style="background-image:url(<?= base_url(); ?>assets/images/main/question-modal/question-2-1.jpg)">
+												<div class="black-overlay"></div>
+												<img src="<?= base_url(); ?>assets/images/main/answer-hover-square.png" alt="Select Answer" class="answer-hover">
+												<p class="answer-no">Office</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-6 col-sm-3 small-padding-left-mobile">
+										<div class="find-my-needs-thumbnail-square find-my-needs-image-2">
+											<div class="content-inside" style="background-image:url(<?= base_url(); ?>assets/images/main/question-modal/question-2-2.jpg)">
+												<div class="black-overlay"></div>
+												<img src="<?= base_url(); ?>assets/images/main/answer-hover-square.png" alt="Select Answer" class="answer-hover">
+												<p class="answer-no">Residence</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-6 col-sm-3 small-padding-right-mobile">
+										<div class="find-my-needs-thumbnail-square find-my-needs-image-2">
+											<div class="content-inside" style="background-image:url(<?= base_url(); ?>assets/images/main/question-modal/question-2-3.jpg)">
+												<div class="black-overlay"></div>
+												<img src="<?= base_url(); ?>assets/images/main/answer-hover-square.png" alt="Select Answer" class="answer-hover">
+												<p class="answer-no">Retail</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-6 col-sm-3 small-padding-left-mobile">
+										<div class="find-my-needs-thumbnail-square find-my-needs-image-2">
+											<div class="content-inside" style="background-image:url(<?= base_url(); ?>assets/images/main/question-modal/question-2-4.jpg)">
+												<div class="black-overlay"></div>
+												<img src="<?= base_url(); ?>assets/images/main/answer-hover-square.png" alt="Select Answer" class="answer-hover">
+												<p class="answer-no">Hospitality</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3 small-padding-right-mobile">
+										<div class="find-my-needs-thumbnail-square find-my-needs-image-2">
+											<div class="content-inside" style="background-image:url(<?= base_url(); ?>assets/images/main/question-modal/question-2-5.jpg)">
+												<div class="black-overlay"></div>
+												<img src="<?= base_url(); ?>assets/images/main/answer-hover-square.png" alt="Select Answer" class="answer-hover">
+												<p class="answer-no">Hospitality</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-6 col-sm-3 small-padding-left-mobile">
+										<div class="find-my-needs-thumbnail-square find-my-needs-image-2">
+											<div class="content-inside" style="background-image:url(<?= base_url(); ?>assets/images/main/question-modal/question-2-6.jpg)">
+												<div class="black-overlay"></div>
+												<img src="<?= base_url(); ?>assets/images/main/answer-hover-square.png" alt="Select Answer" class="answer-hover">
+												<p class="answer-no">Hospitality</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 text-right">
+										<button class="btn btn-custom min-width find-my-needs-prev">
+											<span class="unskew">
+												<span class="text">Previous</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.49 31.49" enable-background="new 0 0 31.49 31.49"><path d="M10.273 5.009c.444-.444 1.143-.444 1.587 0 .429.429.429 1.143 0 1.571l-8.047 8.047h26.554c.619 0 1.127.492 1.127 1.111s-.508 1.127-1.127 1.127h-26.554l8.047 8.032c.429.444.429 1.159 0 1.587-.444.444-1.143.444-1.587 0l-9.952-9.952c-.429-.429-.429-1.143 0-1.571l9.952-9.952z" fill="#fff"/>
+											</span>
+										</button>
+									</div>
+									<div class="col-xs-6">
+										<button class="btn btn-custom min-width find-my-needs-next">
+											<span class="unskew">
+												<span class="text">Next</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.49 31.49" enable-background="new 0 0 31.49 31.49"><path d="M21.205 5.007c-.429-.444-1.143-.444-1.587 0-.429.429-.429 1.143 0 1.571l8.047 8.047h-26.554c-.619.001-1.111.493-1.111 1.112 0 .619.492 1.127 1.111 1.127h26.554l-8.047 8.032c-.429.444-.429 1.159 0 1.587.444.444 1.159.444 1.587 0l9.952-9.952c.444-.429.444-1.143 0-1.571l-9.952-9.953z" fill="#fff"/></svg>
+											</span>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="find-my-needs-slider-layout-1" id="find-my-needs-question-3">
 								<div class="row">
 									<div class="col-xs-12 text-center">
 										<p>The visual that appeals to me most is .......</p>
@@ -889,40 +1061,36 @@
 								</div>
 								<div class="row">
 									<div class="col-xs-6 small-padding-right-mobile">
-										<div class="find-my-needs-thumbnail-1 find-my-needs-image selected">
+										<div class="find-my-needs-thumbnail-1 find-my-needs-image-3 selected">
 											<div class="content-inside" style="background-image:url(<?= base_url(); ?>assets/images/main/question-1-1.jpg)">
 												<div class="black-overlay lighter"></div>
-												<img src="<?= base_url(); ?>assets/images/main/answer-hover.png" alt="Select Answer" class="answer-hover">
-												<p class="answer-no">1</p>
+												<img src="<?= base_url(); ?>assets/images/main/answer-hover-wide.png" alt="Select Answer" class="answer-hover">
 											</div>
 										</div>
 									</div>
 									<div class="col-xs-6 small-padding-left-mobile">
-										<div class="find-my-needs-thumbnail-1 find-my-needs-image">
+										<div class="find-my-needs-thumbnail-1 find-my-needs-image-3 find-my-needs-image">
 											<div class="content-inside" style="background-image:url(<?= base_url(); ?>assets/images/main/question-1-2.jpg)">
 												<div class="black-overlay lighter"></div>
-												<img src="<?= base_url(); ?>assets/images/main/answer-hover.png" alt="Select Answer" class="answer-hover">
-												<p class="answer-no">2</p>
+												<img src="<?= base_url(); ?>assets/images/main/answer-hover-wide.png" alt="Select Answer" class="answer-hover">
 											</div>
 										</div>
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-xs-6 small-padding-right-mobile">
-										<div class="find-my-needs-thumbnail-1 find-my-needs-image">
+										<div class="find-my-needs-thumbnail-1 find-my-needs-image-3 find-my-needs-image">
 											<div class="content-inside" style="background-image:url(<?= base_url(); ?>assets/images/main/question-1-3.jpg)">
 												<div class="black-overlay lighter"></div>
-												<img src="<?= base_url(); ?>assets/images/main/answer-hover.png" alt="Select Answer" class="answer-hover">
-												<p class="answer-no">3</p>
+												<img src="<?= base_url(); ?>assets/images/main/answer-hover-wide.png" alt="Select Answer" class="answer-hover">
 											</div>
 										</div>
 									</div>
 									<div class="col-xs-6 small-padding-left-mobile">
-										<div class="find-my-needs-thumbnail-1 find-my-needs-image">
+										<div class="find-my-needs-thumbnail-1 find-my-needs-image-3 find-my-needs-image">
 											<div class="content-inside" style="background-image:url(<?= base_url(); ?>assets/images/main/question-1-4.jpg)">
 												<div class="black-overlay lighter"></div>
-												<img src="<?= base_url(); ?>assets/images/main/answer-hover.png" alt="Select Answer" class="answer-hover">
-												<p class="answer-no">4</p>
+												<img src="<?= base_url(); ?>assets/images/main/answer-hover-wide.png" alt="Select Answer" class="answer-hover">
 											</div>
 										</div>
 									</div>
@@ -946,7 +1114,7 @@
 							</div>
 						</div>
 						<div>
-							<div class="find-my-needs-slider-layout-2" id="find-my-needs-question-2">
+							<div class="find-my-needs-slider-layout-2" id="find-my-needs-question-4">
 								<div class="row">
 									<div class="col-xs-12 text-center">
 										<p>The following words describe me best .......</p>
@@ -954,29 +1122,198 @@
 								</div>
 								<div class="row">
 									<div class="col-xs-6 col-sm-4 small-padding-right-mobile">
-										<div class="find-my-needs-thumbnail-2 find-my-needs-image-2 selected">
+										<div class="find-my-needs-thumbnail-2 find-my-needs-image-4 selected">
 											<div class="content-inside" style="background-image:url(<?= base_url(); ?>assets/images/main/question-2-1.jpg)">
 												<div class="black-overlay lighter"></div>
 												<img src="<?= base_url(); ?>assets/images/main/answer-hover.png" alt="Select Answer" class="answer-hover">
-												<p class="answer-no">1</p>
 											</div>
 										</div>
 									</div>
 									<div class="col-xs-6 col-sm-4 small-padding-left-mobile">
-										<div class="find-my-needs-thumbnail-2 find-my-needs-image-2">
+										<div class="find-my-needs-thumbnail-2 find-my-needs-image-4">
 											<div class="content-inside" style="background-image:url(<?= base_url(); ?>assets/images/main/question-2-2.jpg)">
 												<div class="black-overlay lighter"></div>
 												<img src="<?= base_url(); ?>assets/images/main/answer-hover.png" alt="Select Answer" class="answer-hover">
-												<p class="answer-no">2</p>
 											</div>
 										</div>
 									</div>
 									<div class="col-xs-6 col-sm-4 small-padding-left-mobile">
-										<div class="find-my-needs-thumbnail-2 find-my-needs-image-2">
+										<div class="find-my-needs-thumbnail-2 find-my-needs-image-4">
 											<div class="content-inside" style="background-image:url(<?= base_url(); ?>assets/images/main/question-2-3.jpg)">
 												<div class="black-overlay lighter"></div>
 												<img src="<?= base_url(); ?>assets/images/main/answer-hover.png" alt="Select Answer" class="answer-hover">
-												<p class="answer-no">3</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 text-right">
+										<button class="btn btn-custom min-width find-my-needs-prev">
+											<span class="unskew">
+												<span class="text">Previous</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.49 31.49" enable-background="new 0 0 31.49 31.49"><path d="M10.273 5.009c.444-.444 1.143-.444 1.587 0 .429.429.429 1.143 0 1.571l-8.047 8.047h26.554c.619 0 1.127.492 1.127 1.111s-.508 1.127-1.127 1.127h-26.554l8.047 8.032c.429.444.429 1.159 0 1.587-.444.444-1.143.444-1.587 0l-9.952-9.952c-.429-.429-.429-1.143 0-1.571l9.952-9.952z" fill="#fff"/>
+											</span>
+										</button>
+									</div>
+									<div class="col-xs-6 small-padding-left-mobile">
+										<button class="btn btn-custom min-width find-my-needs-next">
+											<span class="unskew">
+												<span class="text">Next</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.49 31.49" enable-background="new 0 0 31.49 31.49"><path d="M21.205 5.007c-.429-.444-1.143-.444-1.587 0-.429.429-.429 1.143 0 1.571l8.047 8.047h-26.554c-.619.001-1.111.493-1.111 1.112 0 .619.492 1.127 1.111 1.127h26.554l-8.047 8.032c-.429.444-.429 1.159 0 1.587.444.444 1.159.444 1.587 0l9.952-9.952c.444-.429.444-1.143 0-1.571l-9.952-9.953z" fill="#fff"/></svg>
+											</span>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="find-my-needs-slider-layout-3" id="find-my-needs-question-5-1">
+								<div class="row">
+									<div class="col-xs-12 text-center">
+										<p>Pick one moodboard you like</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 small-padding-right-mobile">
+										<div class="find-my-needs-thumbnail-2 find-my-needs-image-5-1 selected">
+											<div class="content-inside" style="background-image:url(<?= base_url(); ?>assets/images/main/question-modal/question-5-1-1.jpg)">
+												<div class="black-overlay lighter"></div>
+												<img src="<?= base_url(); ?>assets/images/main/answer-hover.png" alt="Select Answer" class="answer-hover">
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-6 small-padding-left-mobile">
+										<div class="find-my-needs-thumbnail-2 find-my-needs-image-5-1">
+											<div class="content-inside" style="background-image:url(<?= base_url(); ?>assets/images/main/question-modal/question-5-1-2.jpg)">
+												<div class="black-overlay lighter"></div>
+												<img src="<?= base_url(); ?>assets/images/main/answer-hover.png" alt="Select Answer" class="answer-hover">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 text-right">
+										<button class="btn btn-custom min-width find-my-needs-prev">
+											<span class="unskew">
+												<span class="text">Previous</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.49 31.49" enable-background="new 0 0 31.49 31.49"><path d="M10.273 5.009c.444-.444 1.143-.444 1.587 0 .429.429.429 1.143 0 1.571l-8.047 8.047h26.554c.619 0 1.127.492 1.127 1.111s-.508 1.127-1.127 1.127h-26.554l8.047 8.032c.429.444.429 1.159 0 1.587-.444.444-1.143.444-1.587 0l-9.952-9.952c-.429-.429-.429-1.143 0-1.571l9.952-9.952z" fill="#fff"/>
+											</span>
+										</button>
+									</div>
+									<div class="col-xs-6">
+										<button class="btn btn-custom min-width find-my-needs-next">
+											<span class="unskew">
+												<span class="text">Next</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.49 31.49" enable-background="new 0 0 31.49 31.49"><path d="M21.205 5.007c-.429-.444-1.143-.444-1.587 0-.429.429-.429 1.143 0 1.571l8.047 8.047h-26.554c-.619.001-1.111.493-1.111 1.112 0 .619.492 1.127 1.111 1.127h26.554l-8.047 8.032c-.429.444-.429 1.159 0 1.587.444.444 1.159.444 1.587 0l9.952-9.952c.444-.429.444-1.143 0-1.571l-9.952-9.953z" fill="#fff"/></svg>
+											</span>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="find-my-needs-slider-layout-3" id="find-my-needs-question-5-2">
+								<div class="row">
+									<div class="col-xs-12 text-center">
+										<p>Pick one moodboard you like</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 small-padding-right-mobile">
+										<div class="find-my-needs-thumbnail-2 find-my-needs-image-5-2 selected">
+											<div class="content-inside" style="background-image:url(<?= base_url(); ?>assets/images/main/question-modal/question-5-2-1.jpg)">
+												<div class="black-overlay lighter"></div>
+												<img src="<?= base_url(); ?>assets/images/main/answer-hover.png" alt="Select Answer" class="answer-hover">
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-6 small-padding-left-mobile">
+										<div class="find-my-needs-thumbnail-2 find-my-needs-image-5-2">
+											<div class="content-inside" style="background-image:url(<?= base_url(); ?>assets/images/main/question-modal/question-5-2-2.jpg)">
+												<div class="black-overlay lighter"></div>
+												<img src="<?= base_url(); ?>assets/images/main/answer-hover.png" alt="Select Answer" class="answer-hover">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 text-right">
+										<button class="btn btn-custom min-width find-my-needs-prev">
+											<span class="unskew">
+												<span class="text">Previous</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.49 31.49" enable-background="new 0 0 31.49 31.49"><path d="M10.273 5.009c.444-.444 1.143-.444 1.587 0 .429.429.429 1.143 0 1.571l-8.047 8.047h26.554c.619 0 1.127.492 1.127 1.111s-.508 1.127-1.127 1.127h-26.554l8.047 8.032c.429.444.429 1.159 0 1.587-.444.444-1.143.444-1.587 0l-9.952-9.952c-.429-.429-.429-1.143 0-1.571l9.952-9.952z" fill="#fff"/>
+											</span>
+										</button>
+									</div>
+									<div class="col-xs-6">
+										<button class="btn btn-custom min-width find-my-needs-next">
+											<span class="unskew">
+												<span class="text">Next</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.49 31.49" enable-background="new 0 0 31.49 31.49"><path d="M21.205 5.007c-.429-.444-1.143-.444-1.587 0-.429.429-.429 1.143 0 1.571l8.047 8.047h-26.554c-.619.001-1.111.493-1.111 1.112 0 .619.492 1.127 1.111 1.127h26.554l-8.047 8.032c-.429.444-.429 1.159 0 1.587.444.444 1.159.444 1.587 0l9.952-9.952c.444-.429.444-1.143 0-1.571l-9.952-9.953z" fill="#fff"/></svg>
+											</span>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="find-my-needs-slider-layout-3" id="find-my-needs-question-5-3">
+								<div class="row">
+									<div class="col-xs-12 text-center">
+										<p>Pick one moodboard you like</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 small-padding-right-mobile">
+										<div class="find-my-needs-thumbnail-2 find-my-needs-image-5-2 selected">
+											<div class="content-inside" style="background-image:url(<?= base_url(); ?>assets/images/main/question-modal/question-5-3-1.jpg)">
+												<div class="black-overlay lighter"></div>
+												<img src="<?= base_url(); ?>assets/images/main/answer-hover.png" alt="Select Answer" class="answer-hover">
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-6 small-padding-left-mobile">
+										<div class="find-my-needs-thumbnail-2 find-my-needs-image-5-2">
+											<div class="content-inside" style="background-image:url(<?= base_url(); ?>assets/images/main/question-modal/question-5-3-2.jpg)">
+												<div class="black-overlay lighter"></div>
+												<img src="<?= base_url(); ?>assets/images/main/answer-hover.png" alt="Select Answer" class="answer-hover">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 text-right">
+										<button class="btn btn-custom min-width find-my-needs-prev">
+											<span class="unskew">
+												<span class="text">Previous</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.49 31.49" enable-background="new 0 0 31.49 31.49"><path d="M10.273 5.009c.444-.444 1.143-.444 1.587 0 .429.429.429 1.143 0 1.571l-8.047 8.047h26.554c.619 0 1.127.492 1.127 1.111s-.508 1.127-1.127 1.127h-26.554l8.047 8.032c.429.444.429 1.159 0 1.587-.444.444-1.143.444-1.587 0l-9.952-9.952c-.429-.429-.429-1.143 0-1.571l9.952-9.952z" fill="#fff"/>
+											</span>
+										</button>
+									</div>
+									<div class="col-xs-6">
+										<button class="btn btn-custom min-width find-my-needs-next">
+											<span class="unskew">
+												<span class="text">Next</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.49 31.49" enable-background="new 0 0 31.49 31.49"><path d="M21.205 5.007c-.429-.444-1.143-.444-1.587 0-.429.429-.429 1.143 0 1.571l8.047 8.047h-26.554c-.619.001-1.111.493-1.111 1.112 0 .619.492 1.127 1.111 1.127h26.554l-8.047 8.032c-.429.444-.429 1.159 0 1.587.444.444 1.159.444 1.587 0l9.952-9.952c.444-.429.444-1.143 0-1.571l-9.952-9.953z" fill="#fff"/></svg>
+											</span>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="find-my-needs-slider-layout-3" id="find-my-needs-question-5-4">
+								<div class="row">
+									<div class="col-xs-12 text-center">
+										<p>Pick one moodboard you like</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 small-padding-right-mobile">
+										<div class="find-my-needs-thumbnail-2 find-my-needs-image-5-2 selected">
+											<div class="content-inside" style="background-image:url(<?= base_url(); ?>assets/images/main/question-modal/question-5-4-1.jpg)">
+												<div class="black-overlay lighter"></div>
+												<img src="<?= base_url(); ?>assets/images/main/answer-hover.png" alt="Select Answer" class="answer-hover">
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-6 small-padding-left-mobile">
+										<div class="find-my-needs-thumbnail-2 find-my-needs-image-5-2">
+											<div class="content-inside" style="background-image:url(<?= base_url(); ?>assets/images/main/question-modal/question-5-4-2.jpg)">
+												<div class="black-overlay lighter"></div>
+												<img src="<?= base_url(); ?>assets/images/main/answer-hover.png" alt="Select Answer" class="answer-hover">
 											</div>
 										</div>
 									</div>
@@ -997,6 +1334,7 @@
 										</button>
 									</div>
 								</div>
+
 							</div>
 						</div>
 					</div>
@@ -1063,29 +1401,62 @@
 							<span class="stripe"></span>
 						</div>
 					</button>
-					<div class="popup-header" style="background-image:url(<?= base_url(); ?>assets/images/main/about-us-detail.jpg)">
-						<div class="black-overlay"></div>
-						<div class="popup-header-content">
-							<h1>ABOUT US</h1>
-							<h4>Architecture is a visual art, and the buildings speak for themselves.</h4>
-						</div>
+					<div class="tab-content">
+						<div class="modal-about-us-section tab-pane fade in active">
+							<div class="popup-header" style="background-image:url(<?= base_url(); ?>assets/images/main/about-us-detail.jpg)">
+								<div class="black-overlay"></div>
+								<div class="popup-header-content">
+									<h1>ABOUT US</h1>
+									<h4>Architecture is a visual art, and the buildings speak for themselves.</h4>
+								</div>
 
-						<div class="scroll-down-icon-wrapper">
-							<img src="<?= base_url(); ?>assets/images/main/scroll-down-icon-white.png" class="scroll-down-icon" alt="Scroll Down">
-							<img src="<?= base_url(); ?>assets/images/main/scroll-down-arrow-white.png" class="scroll-down-icon-arrow scroll-down-animation" alt="Scroll Down">
-						</div>
+								<div class="scroll-down-icon-wrapper">
+									<img src="<?= base_url(); ?>assets/images/main/scroll-down-icon-white.png" class="scroll-down-icon" alt="Scroll Down">
+									<img src="<?= base_url(); ?>assets/images/main/scroll-down-arrow-white.png" class="scroll-down-icon-arrow scroll-down-animation" alt="Scroll Down">
+								</div>
+							</div>
+					  	</div>
+					  	<div class="modal-history-section tab-pane fade">
+							<div class="popup-header" style="background-image:url(<?= base_url(); ?>assets/images/main/about-us-detail.jpg)">
+								<div class="black-overlay"></div>
+								<div class="popup-header-content">
+									<h1>HISTORY</h1>
+									<h4>Architecture is a visual art, and the buildings speak for themselves.</h4>
+								</div>
+
+								<div class="scroll-down-icon-wrapper">
+									<img src="<?= base_url(); ?>assets/images/main/scroll-down-icon-white.png" class="scroll-down-icon" alt="Scroll Down">
+									<img src="<?= base_url(); ?>assets/images/main/scroll-down-arrow-white.png" class="scroll-down-icon-arrow scroll-down-animation" alt="Scroll Down">
+								</div>
+							</div>
+					  	</div>
+					  	<div class="modal-our-team-section tab-pane fade">
+							<div class="popup-header" style="background-image:url(<?= base_url(); ?>assets/images/main/about-us-detail.jpg)">
+								<div class="black-overlay"></div>
+								<div class="popup-header-content">
+									<h1>OUR TEAM</h1>
+									<h4>Architecture is a visual art, and the buildings speak for themselves.</h4>
+								</div>
+
+								<div class="scroll-down-icon-wrapper">
+									<img src="<?= base_url(); ?>assets/images/main/scroll-down-icon-white.png" class="scroll-down-icon" alt="Scroll Down">
+									<img src="<?= base_url(); ?>assets/images/main/scroll-down-arrow-white.png" class="scroll-down-icon-arrow scroll-down-animation" alt="Scroll Down">
+								</div>
+							</div>
+					  	</div>
 					</div>
+
 					<div class="popup-content">
 						<div class="popup-navigation">
 							<ul class="nav nav-tabs nav-tabs-custom center visible-xs" id="about-us-modal-mobile-navigation">
-								<li class="active"><a data-toggle="tab" href="#modal-about-us-section">About Us</a></li>
-							  	<li><a data-toggle="tab" href="#modal-history-section">History</a></li>
-							  	<li><a data-toggle="tab" href="#modal-our-team-section">Our Team</a></li>
+								<li class="active"><a data-toggle="tab" data-target=".modal-about-us-section">About Us</a></li>
+							  	<li><a data-toggle="tab" data-target=".modal-history-section">History</a></li>
+							  	<li><a data-toggle="tab" data-target=".modal-our-team-section">Our Team</a></li>
 							</ul>
 							<div class="row hidden-xs">
 								<div class="col-xs-12 col-sm-6 col-md-4">
 									<div class="popup-navigation-lane-container">
-										<div class="popup-navigation-to-drag" data-target="#modal-about-us-section">
+										<div class="popup-navigation-to-drag" data-target=".modal-about-us-section">
 											<span class="unskew">
 												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.49 31.49" enable-background="new 0 0 31.49 31.49"><path d="M21.205 5.007c-.429-.444-1.143-.444-1.587 0-.429.429-.429 1.143 0 1.571l8.047 8.047h-26.554c-.619.001-1.111.493-1.111 1.112 0 .619.492 1.127 1.111 1.127h26.554l-8.047 8.032c-.429.444-.429 1.159 0 1.587.444.444 1.159.444 1.587 0l9.952-9.952c.444-.429.444-1.143 0-1.571l-9.952-9.953z" fill="#fff"/></svg>
 											</span>
@@ -1101,7 +1472,7 @@
 								</div>
 								<div class="col-xs-12 col-sm-6 col-md-4">
 									<div class="popup-navigation-lane-container">
-										<div class="popup-navigation-to-drag" data-target="#modal-history-section">
+										<div class="popup-navigation-to-drag" data-target=".modal-history-section">
 											<span class="unskew">
 												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.49 31.49" enable-background="new 0 0 31.49 31.49"><path d="M21.205 5.007c-.429-.444-1.143-.444-1.587 0-.429.429-.429 1.143 0 1.571l8.047 8.047h-26.554c-.619.001-1.111.493-1.111 1.112 0 .619.492 1.127 1.111 1.127h26.554l-8.047 8.032c-.429.444-.429 1.159 0 1.587.444.444 1.159.444 1.587 0l9.952-9.952c.444-.429.444-1.143 0-1.571l-9.952-9.953z" fill="#fff"/></svg>
 											</span>
@@ -1117,7 +1488,7 @@
 								</div>
 								<div class="col-xs-12 col-sm-6 col-md-4">
 									<div class="popup-navigation-lane-container">
-										<div class="popup-navigation-to-drag" data-target="#modal-our-team-section">
+										<div class="popup-navigation-to-drag" data-target=".modal-our-team-section">
 											<span class="unskew">
 												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.49 31.49" enable-background="new 0 0 31.49 31.49"><path d="M21.205 5.007c-.429-.444-1.143-.444-1.587 0-.429.429-.429 1.143 0 1.571l8.047 8.047h-26.554c-.619.001-1.111.493-1.111 1.112 0 .619.492 1.127 1.111 1.127h26.554l-8.047 8.032c-.429.444-.429 1.159 0 1.587.444.444 1.159.444 1.587 0l9.952-9.952c.444-.429.444-1.143 0-1.571l-9.952-9.953z" fill="#fff"/></svg>
 											</span>
@@ -1136,7 +1507,7 @@
 						<div class="row">
 							<div class="col-xs-12">
 								<div class="tab-content">
-								  	<div id="modal-about-us-section" class="tab-pane fade in active">
+								  	<div class="modal-about-us-section tab-pane fade in active">
 										<div class="row">
 											<div class="col-xs-12 col-sm-6 col-sm-push-6">
 												<div class="popup-about-us-padding-left">
@@ -1185,7 +1556,7 @@
 										</div>
 										<div class="popup-button-wrapper">
 											<div class="popup-button-wrapper-inner">
-												<button class="btn btn-custom popup-prev-next" data-toggle="tab" data-target="#modal-history-section">
+												<button class="btn btn-custom popup-prev-next" data-toggle="tab" data-target=".modal-history-section">
 													<span class="unskew">
 														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.49 31.49" enable-background="new 0 0 31.49 31.49"><path d="M21.205 5.007c-.429-.444-1.143-.444-1.587 0-.429.429-.429 1.143 0 1.571l8.047 8.047h-26.554c-.619.001-1.111.493-1.111 1.112 0 .619.492 1.127 1.111 1.127h26.554l-8.047 8.032c-.429.444-.429 1.159 0 1.587.444.444 1.159.444 1.587 0l9.952-9.952c.444-.429.444-1.143 0-1.571l-9.952-9.953z" fill="#fff"/></svg>
 													</span>
@@ -1196,7 +1567,7 @@
 											</div>
 										</div>
 								  	</div>
-								  	<div id="modal-history-section" class="tab-pane fade">
+								  	<div class="modal-history-section tab-pane fade">
 										<div class="row">
 								    		<div class="col-xs-12">
 								    			<div class="modal-detail-quote bigger-margin-bottom">
@@ -1268,7 +1639,7 @@
 											<div class="col-xs-12">
 												<div class="popup-button-wrapper">
 													<div class="popup-button-wrapper-inner">
-														<button class="btn btn-custom popup-prev-next" data-toggle="tab" data-target="#modal-about-us-section">
+														<button class="btn btn-custom popup-prev-next" data-toggle="tab" data-target=".modal-about-us-section">
 															<span class="unskew">
 																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.494 31.494" enable-background="new 0 0 31.494 31.494"><path d="M10.273 5.009c.444-.444 1.143-.444 1.587 0 .429.429.429 1.143 0 1.571l-8.047 8.047h26.554c.619 0 1.127.492 1.127 1.111s-.508 1.127-1.127 1.127h-26.554l8.047 8.032c.429.444.429 1.159 0 1.587-.444.444-1.143.444-1.587 0l-9.952-9.952c-.429-.429-.429-1.143 0-1.571l9.952-9.952z" fill="#fff"/></svg>
 															</span>
@@ -1278,7 +1649,7 @@
 														</span>
 													</div>
 													<div class="popup-button-wrapper-inner">
-														<button class="btn btn-custom popup-prev-next" data-toggle="tab" data-target="#modal-our-team-section">
+														<button class="btn btn-custom popup-prev-next" data-toggle="tab" data-target=".modal-our-team-section">
 															<span class="unskew">
 																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.49 31.49" enable-background="new 0 0 31.49 31.49"><path d="M21.205 5.007c-.429-.444-1.143-.444-1.587 0-.429.429-.429 1.143 0 1.571l8.047 8.047h-26.554c-.619.001-1.111.493-1.111 1.112 0 .619.492 1.127 1.111 1.127h26.554l-8.047 8.032c-.429.444-.429 1.159 0 1.587.444.444 1.159.444 1.587 0l9.952-9.952c.444-.429.444-1.143 0-1.571l-9.952-9.953z" fill="#fff"/></svg>
 															</span>
@@ -1292,7 +1663,7 @@
 										</div>
 								  	</div>
 
-								  	<div id="modal-our-team-section" class="tab-pane fade team">
+								  	<div class="modal-our-team-section tab-pane fade team">
 										<img src="<?= base_url(); ?>assets/images/main/thank-you-modal-bg.png" alt="" class="modal-our-team-bg-image">
 								    	<div class="row">
 								    		<div class="col-xs-12">
@@ -1352,7 +1723,7 @@
 											<div class="col-xs-12">
 												<div class="popup-button-wrapper right-align margin-top relative">
 													<div class="popup-button-wrapper-inner">
-														<button class="btn btn-custom popup-prev-next" data-toggle="tab" data-target="#modal-history-section">
+														<button class="btn btn-custom popup-prev-next" data-toggle="tab" data-target=".modal-history-section">
 															<span class="unskew">
 																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.494 31.494" enable-background="new 0 0 31.494 31.494"><path d="M10.273 5.009c.444-.444 1.143-.444 1.587 0 .429.429.429 1.143 0 1.571l-8.047 8.047h26.554c.619 0 1.127.492 1.127 1.111s-.508 1.127-1.127 1.127h-26.554l8.047 8.032c.429.444.429 1.159 0 1.587-.444.444-1.143.444-1.587 0l-9.952-9.952c-.429-.429-.429-1.143 0-1.571l9.952-9.952z" fill="#fff"/></svg>
 															</span>
@@ -1976,27 +2347,27 @@
 					 --><div class="news-and-gallery-modal-carousel-wrapper">
 					 		<div class="news-and-gallery-modal-carousel">
 								<div>
-									<div class="thumbnail">
+									<div class="thumbnail active" data-image="<?= base_url(); ?>assets/images/main/news-and-gallery-modal/thumbnail-1.jpg">
 										<div class="content-inside" style="background-image:url(<?= base_url(); ?>assets/images/main/news-and-gallery-modal/thumbnail-1.jpg)"></div>
 									</div>
 								</div>
 								<div>
-									<div class="thumbnail">
+									<div class="thumbnail" data-image="<?= base_url(); ?>assets/images/main/news-and-gallery-modal/thumbnail-2.jpg">
 										<div class="content-inside" style="background-image:url(<?= base_url(); ?>assets/images/main/news-and-gallery-modal/thumbnail-2.jpg)"></div>
 									</div>
 								</div>
 								<div>
-									<div class="thumbnail">
+									<div class="thumbnail" data-image="<?= base_url(); ?>assets/images/main/news-and-gallery-modal/thumbnail-3.jpg">
 										<div class="content-inside" style="background-image:url(<?= base_url(); ?>assets/images/main/news-and-gallery-modal/thumbnail-3.jpg)"></div>
 									</div>
 								</div>
 								<div>
-									<div class="thumbnail">
+									<div class="thumbnail" data-image="<?= base_url(); ?>assets/images/main/news-and-gallery-modal/thumbnail-4.jpg">
 										<div class="content-inside" style="background-image:url(<?= base_url(); ?>assets/images/main/news-and-gallery-modal/thumbnail-4.jpg)"></div>
 									</div>
 								</div>
 								<div>
-									<div class="thumbnail">
+									<div class="thumbnail" data-image="<?= base_url(); ?>assets/images/main/news-and-gallery-modal/thumbnail-1.jpg">
 										<div class="content-inside" style="background-image:url(<?= base_url(); ?>assets/images/main/news-and-gallery-modal/thumbnail-1.jpg)"></div>
 									</div>
 								</div>
@@ -2027,7 +2398,6 @@
 									 --><span class="v-center">
 									 		<i class="fa fa-twitter" aria-hidden="true"></i>
 											<i class="fa fa-facebook" aria-hidden="true"></i>
-											<i class="fa fa-instagram" aria-hidden="true"></i>
 										</span>
 									</p>
 								</div>
@@ -2195,28 +2565,48 @@
 							<span class="stripe"></span>
 						</div>
 					</button>
-					<div class="popup-header" style="background-image:url(<?= base_url(); ?>assets/images/main/construction-modal/header.jpg)">
-						<div class="black-overlay"></div>
-						<div class="popup-header-content">
-							<h1>CONSTRUCTION</h1>
-							<h4>Architecture is a visual art, and the buildings speak for themselves.</h4>
-						</div>
 
-						<div class="scroll-down-icon-wrapper">
-							<img src="<?= base_url(); ?>assets/images/main/scroll-down-icon-white.png" class="scroll-down-icon" alt="Scroll Down">
-							<img src="<?= base_url(); ?>assets/images/main/scroll-down-arrow-white.png" class="scroll-down-icon-arrow scroll-down-animation" alt="Scroll Down">
-						</div>
+					<div class="tab-content">
+				 		<div class="modal-construction-section tab-pane fade in active">
+							<div class="popup-header" style="background-image:url(<?= base_url(); ?>assets/images/main/construction-modal/header.jpg)">
+								<div class="black-overlay"></div>
+								<div class="popup-header-content">
+									<h1>CONSTRUCTION</h1>
+									<h4>Architecture is a visual art, and the buildings speak for themselves.</h4>
+								</div>
+
+								<div class="scroll-down-icon-wrapper">
+									<img src="<?= base_url(); ?>assets/images/main/scroll-down-icon-white.png" class="scroll-down-icon" alt="Scroll Down">
+									<img src="<?= base_url(); ?>assets/images/main/scroll-down-arrow-white.png" class="scroll-down-icon-arrow scroll-down-animation" alt="Scroll Down">
+								</div>
+							</div>
+					  	</div>
+					  	<div class="modal-interior-section tab-pane fade">
+							<div class="popup-header" style="background-image:url(<?= base_url(); ?>assets/images/main/construction-modal/header.jpg)">
+								<div class="black-overlay"></div>
+								<div class="popup-header-content">
+									<h1>Interior</h1>
+									<h4>Architecture is a visual art, and the buildings speak for themselves.</h4>
+								</div>
+
+								<div class="scroll-down-icon-wrapper">
+									<img src="<?= base_url(); ?>assets/images/main/scroll-down-icon-white.png" class="scroll-down-icon" alt="Scroll Down">
+									<img src="<?= base_url(); ?>assets/images/main/scroll-down-arrow-white.png" class="scroll-down-icon-arrow scroll-down-animation" alt="Scroll Down">
+								</div>
+							</div>
+					  	</div>
 					</div>
+
 					<div class="popup-content padding-bottom">
 						<div class="popup-navigation">
 							<ul id="services-modal-mobile-navigation" class="nav nav-tabs nav-tabs-custom center visible-xs">
-								<li class="active"><a data-toggle="tab" href="#modal-construction-section">Construction</a></li>
-							  	<li><a data-toggle="tab" href="#modal-interior-section">Interior</a></li>
+								<li class="active"><a data-toggle="tab" data-target=".modal-construction-section">Construction</a></li>
+							  	<li><a data-toggle="tab" data-target=".modal-interior-section">Interior</a></li>
 							</ul>
 							<div class="row hidden-xs">
 								<div class="col-xs-12 col-sm-4 col-sm-offset-2">
 									<div class="popup-navigation-lane-container">
-										<div class="popup-navigation-to-drag" data-target="#modal-construction-section">
+										<div class="popup-navigation-to-drag" data-target=".modal-construction-section">
 											<span class="unskew">
 												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.49 31.49" enable-background="new 0 0 31.49 31.49"><path d="M21.205 5.007c-.429-.444-1.143-.444-1.587 0-.429.429-.429 1.143 0 1.571l8.047 8.047h-26.554c-.619.001-1.111.493-1.111 1.112 0 .619.492 1.127 1.111 1.127h26.554l-8.047 8.032c-.429.444-.429 1.159 0 1.587.444.444 1.159.444 1.587 0l9.952-9.952c.444-.429.444-1.143 0-1.571l-9.952-9.953z" fill="#fff"/></svg>
 											</span>
@@ -2232,7 +2622,7 @@
 								</div>
 								<div class="col-xs-12 col-sm-4">
 									<div class="popup-navigation-lane-container">
-										<div class="popup-navigation-to-drag" data-target="#modal-interior-section">
+										<div class="popup-navigation-to-drag" data-target=".modal-interior-section">
 											<span class="unskew">
 												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.49 31.49" enable-background="new 0 0 31.49 31.49"><path d="M21.205 5.007c-.429-.444-1.143-.444-1.587 0-.429.429-.429 1.143 0 1.571l8.047 8.047h-26.554c-.619.001-1.111.493-1.111 1.112 0 .619.492 1.127 1.111 1.127h26.554l-8.047 8.032c-.429.444-.429 1.159 0 1.587.444.444 1.159.444 1.587 0l9.952-9.952c.444-.429.444-1.143 0-1.571l-9.952-9.953z" fill="#fff"/></svg>
 											</span>
@@ -2251,7 +2641,7 @@
 						<div class="row">
 							<div class="col-xs-12">
 								<div class="tab-content">
-								  	<div id="modal-construction-section" class="tab-pane fade in active">
+								  	<div class="modal-construction-section tab-pane fade in active">
 										<div class="construction-content-wrapper">
                                             <div class="row">
                                                 <div class="col-xs-12 col-sm-6 v-center-tablet">
@@ -2329,7 +2719,7 @@
                                             </div>
                                             <div class="popup-button-wrapper relative right-align">
     											<div class="popup-button-wrapper-inner">
-    												<button class="btn btn-custom popup-prev-next" data-toggle="tab" data-target="#modal-interior-section">
+    												<button class="btn btn-custom popup-prev-next" data-toggle="tab" data-target=".modal-interior-section">
     													<span class="unskew">
     														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.49 31.49" enable-background="new 0 0 31.49 31.49"><path d="M21.205 5.007c-.429-.444-1.143-.444-1.587 0-.429.429-.429 1.143 0 1.571l8.047 8.047h-26.554c-.619.001-1.111.493-1.111 1.112 0 .619.492 1.127 1.111 1.127h26.554l-8.047 8.032c-.429.444-.429 1.159 0 1.587.444.444 1.159.444 1.587 0l9.952-9.952c.444-.429.444-1.143 0-1.571l-9.952-9.953z" fill="#fff"/></svg>
     													</span>
@@ -2341,7 +2731,7 @@
     										</div>
                                         </div>
 								  	</div>
-                                    <div id="modal-interior-section" class="tab-pane fade">
+                                    <div class="modal-interior-section tab-pane fade">
 										<div class="row row-relative">
 											<div class="col-xs-12 col-sm-6 v-center-tablet">
 												<div class="popup-interior-right">
@@ -2412,7 +2802,7 @@
 										</div>
 										<div class="popup-button-wrapper relative right-align">
 											<div class="popup-button-wrapper-inner">
-												<button class="btn btn-custom popup-prev-next" data-toggle="tab" data-target="#modal-construction-section">
+												<button class="btn btn-custom popup-prev-next" data-toggle="tab" data-target=".modal-construction-section">
                                                     <span class="unskew">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.494 31.494" enable-background="new 0 0 31.494 31.494"><path d="M10.273 5.009c.444-.444 1.143-.444 1.587 0 .429.429.429 1.143 0 1.571l-8.047 8.047h26.554c.619 0 1.127.492 1.127 1.111s-.508 1.127-1.127 1.127h-26.554l8.047 8.032c.429.444.429 1.159 0 1.587-.444.444-1.143.444-1.587 0l-9.952-9.952c-.429-.429-.429-1.143 0-1.571l9.952-9.952z" fill="#fff"/></svg>
                                                     </span>
@@ -2471,42 +2861,36 @@
 
 		// if (nextIndex >=1 && nextIndex <=3) {
         if (nextIndex >=2 && nextIndex <=4) {
-			navbarLeftMenu.forEach(
-				function(item){
-					item.classList.remove('active');
-				}
-			)
-			navbarRightMenu.forEach(
-				function(item){
-					item.classList.remove('active');
-				}
-			)
+			// ga support IE/Edge/Firefox50--
+			// navbarLeftMenu.forEach(
+			// 	function(item){
+			// 		item.classList.remove('active');
+			// 	}
+			// )
+			for (var a = 0; a < navbarLeftMenu.length; a++) {
+				navbarLeftMenu[a].classList.remove('active');
+			}
+			for (var b = 0; b < navbarRightMenu.length; b++) {
+				navbarRightMenu[a].classList.remove('active');
+			}
 			navbarLeftMenu[nextIndex-2].classList.add('active');
 		}
 		else if (nextIndex >=5 && nextIndex <=7){
-			navbarLeftMenu.forEach(
-				function(item){
-					item.classList.remove('active');
-				}
-			)
-			navbarRightMenu.forEach(
-				function(item){
-					item.classList.remove('active');
-				}
-			)
+			for (var a = 0; a < navbarLeftMenu.length; a++) {
+				navbarLeftMenu[a].classList.remove('active');
+			}
+			for (var b = 0; b < navbarRightMenu.length; b++) {
+				navbarRightMenu[a].classList.remove('active');
+			}
 			navbarRightMenu[nextIndex-3-2].classList.add('active');
 		}
         else {
-            navbarLeftMenu.forEach(
-				function(item){
-					item.classList.remove('active');
-				}
-			)
-			navbarRightMenu.forEach(
-				function(item){
-					item.classList.remove('active');
-				}
-			)
+			for (var a = 0; a < navbarLeftMenu.length; a++) {
+				navbarLeftMenu[a].classList.remove('active');
+			}
+			for (var b = 0; b < navbarRightMenu.length; b++) {
+				navbarRightMenu[a].classList.remove('active');
+			}
         }
 	}
 
@@ -2544,6 +2928,7 @@
 		mouseDrag: true,
 		autoplayButtonOutput: false,
 		controls: false,
+		loop: true,
 		nav: false,
 		swipeAngle: 60,
 		responsive: {
