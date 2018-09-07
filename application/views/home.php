@@ -20,7 +20,7 @@
     					<? continue; ?>
     				<? endif; ?>
 
-	    			<li data-menuanchor="<?= $header->anchor; ?>"><a href="<?= $header->link; ?>"><span><?= $header->name; ?></span></a></li>
+	    			<li data-menuanchor="<?= $header->anchor; ?>"><a href="#<?= $header->anchor; ?>"><span><?= $header->name; ?></span></a></li>
 	    		<? endforeach; ?>
     		</ul>
     	</div><!--
@@ -34,7 +34,7 @@
     					<? continue; ?>
     				<? endif; ?>
 
-	    			<li data-menuanchor="<?= $header->anchor; ?>"><a href="<?= $header->link; ?>"><span><?= $header->name; ?></span></a></li>
+	    			<li data-menuanchor="<?= $header->anchor; ?>"><a href="#<?= $header->anchor; ?>"><span><?= $header->name; ?></span></a></li>
 	    		<? endforeach; ?>
 				<li <? if ($setting->setting__system_main_search_function <= 0): ?>style="display: none;"<? endif; ?> class="search-button-container"><button class="btn btn-search" id="btn-open-search-desktop"><img src="<?= base_url(); ?>assets/images/main/search-icon.png" alt="Search" class="search-icon"></button></li>
 			</ul>
