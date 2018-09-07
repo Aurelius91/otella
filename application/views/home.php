@@ -2891,7 +2891,7 @@
 				navbarLeftMenu[a].classList.remove('active');
 			}
 			for (var b = 0; b < navbarRightMenu.length; b++) {
-				navbarRightMenu[a].classList.remove('active');
+				navbarRightMenu[b].classList.remove('active');
 			}
 			navbarLeftMenu[nextIndex-2].classList.add('active');
 		}
@@ -2900,7 +2900,7 @@
 				navbarLeftMenu[a].classList.remove('active');
 			}
 			for (var b = 0; b < navbarRightMenu.length; b++) {
-				navbarRightMenu[a].classList.remove('active');
+				navbarRightMenu[b].classList.remove('active');
 			}
 			navbarRightMenu[nextIndex-3-2].classList.add('active');
 		}
@@ -2909,7 +2909,7 @@
 				navbarLeftMenu[a].classList.remove('active');
 			}
 			for (var b = 0; b < navbarRightMenu.length; b++) {
-				navbarRightMenu[a].classList.remove('active');
+				navbarRightMenu[b].classList.remove('active');
 			}
         }
 	}
