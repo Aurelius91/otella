@@ -232,6 +232,10 @@
 			</div>
 		<? endif; ?>
 
+		<? if (isset($acl['career']) && $acl['career']->list > 0): ?>
+			<a href="<?= base_url(); ?>career/view/1/" class="<? if ($type == 'Career'): ?>active<? endif; ?> item"><i class="user add icon"></i> Careers</a>
+		<? endif; ?>
+
 		<? if (isset($acl['user']) && $acl['user']->list > 0): ?>
 			<a href="<?= base_url(); ?>user/view/1/" class="<? if ($type == 'User'): ?>active<? endif; ?> item"><i class="users icon"></i> Users</a>
 		<? endif; ?>
